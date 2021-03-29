@@ -1,0 +1,119 @@
+:root {
+  font-size: 18px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Kumbh Sans' , sans-serif;
+color: hsl(0, 11%, 12%);
+}
+section {
+  background-color:#19A1AD;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  position: relative;
+}
+.main-container {
+  width: 350px;
+  border-radius:10px ;  
+  background-color: #FFFFFF;
+  margin: 10% 35%;
+  float: left;
+  overflow:hidden;
+  position: relative;
+}
+
+.upper-container{
+   background-image: url(assets/images/bg-pattern-card.svg);
+   background-size: cover;
+   height: 150px;
+
+}
+.image-front img{
+  margin-left: 35%;
+  margin-top: -20%;
+  border:1px solid transparent;
+  background-color: white;
+  padding: 4px;
+  border-radius: 50%;
+  
+}
+.info{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Kumbh Sans;
+   
+}
+.info h2 {
+  font-size:1.1rem;
+ 
+}
+.info span {
+  opacity: 0.5;
+   
+}
+.info h3 {
+  font-size: 1rem;
+  margin: 12px 0 25px;
+  opacity: 0.5;
+}
+.lower-container {
+ display: flex;
+ text-align: center;
+ padding:0 25px;
+}
+.item {
+flex: 1;
+height: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.item h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.item h5 {
+  font-size: .6rem;
+  letter-spacing: 1px;
+    opacity: 0.5;
+}
+
+.circles .c1,
+.circles .c2{
+  position: absolute;
+  width: 800px;
+  animation: 2s circles forwards;
+  opacity: 0;
+
+}
+.circles .c1{
+ top: -180px;
+ left: -180px;
+ transform: (-100px,-50px);
+
+}
+.circles .c2{
+ bottom:-180px;
+ right: -180px;
+ transform: ( 100px, 50px);
+}
+@keyframes circles {
+  0%{
+  opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.attribution{
+ font-size: 1rem;
+ padding: 10px;
+}
